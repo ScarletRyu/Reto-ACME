@@ -1,0 +1,214 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+html{
+  scroll-behavior: smooth;
+}
+/* --------------------------------------------Navbar--------------------------------------- */
+#navbar{
+  width: 100%;
+  background-color: #000;
+  position: sticky;
+  top:0px;
+}
+.menu{
+  text-align: center;
+  font-family: arial;
+  font-weight: bold;
+  overflow: hidden;
+}
+.menu {
+  padding-left: 15%;
+}
+.menu li{
+  list-style-type: none;
+  padding: 30px 2% 30px 2%;
+  float: left;
+  display: table;
+}
+.menu li:hover{
+  background-color: #fff;
+}
+.menu li:hover a{
+  color: #000;
+}
+.menu li:hover p{
+  color: #000;
+}
+.menu li a{
+  text-decoration: none;
+  color: #fff;
+}
+.menu li p{
+  text-decoration: none;
+  color: #fff;
+}
+.logo img{
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 5%;
+  background-color: #fff;
+  border-radius: 50%;
+  height: 60px;
+  weight: 60px;
+}
+/* --------------------------------------------END---Navbar--------------------------------------- */
+/* Body */
+.banner {
+  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../img/pb2.jpg);
+  background-size: cover;
+  /* background-position: center; */
+  background-attachment: fixed;
+}
+.banner h1{
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: arial;
+  padding: 30%;
+}
+/* ---------------------------------------------------Descripción------------------------------------------------------- */
+.column1 {
+  float: left;
+  width: 55%;
+  height: 100%;
+}
+.column1 p{
+  text-align: left;
+  padding-bottom: 20px;
+  padding-left: 5px;
+}
+.column2 {
+  float:left;
+  width: 44%;
+  height: 100%;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row h2{
+  padding:15px 0px 15px 0px;
+  font-size: 32px;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: capitalize;
+  font-style: italic;
+  font-weight: bold;
+}
+.column2 h3{
+  padding:15px 40px 5px 20px;
+  text-align: left;
+  font-weight: bold;
+}
+.row p{
+  font-family: arial;
+  font-weight: bold;
+  font-size: 18px;
+  padding:15px 40px 10px 40px;
+}
+.row hr{
+  margin-top: 50px;
+}
+iframe{
+  width:375px;
+  height:280px;
+  padding-left: 5%;
+  padding-top: 24px;
+  padding-bottom: 20px;
+}
+#last{
+  padding-bottom: 15px;
+}
+/* ---------------------------------------------------End----Descripción------------------------------------------------------- */
+/* ------------------------------------------------------------TEMPORADAS------------------------------------------------------ */
+button.accordion {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 120px;
+  width: 80%;
+  background-color: whitesmoke;
+  border: none;
+  outline: none;
+  text-align: left;
+  padding: 15px 20px;
+  font-size: 18px;
+  color: #444;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+
+button.accordion:after {
+  content: '\f055';
+  font-family: "fontawesome";
+  font-size: 14px;
+  float: right;
+}
+/* cambia el icono de abierto a cierre **EN SOLO ANFITRION NO LO CARGA** */
+button.accordion.is-open:after {
+  content: '\f056';
+}
+/* cambia el iciono de cierre a abierto **EN SOLO ANFITRION NO LO CARGA** */
+button.accordion:hover, button.accordion.is-open {
+  background-color: #ddd;
+}
+
+.accordion-content {
+  margin-left: 100px;
+  width: 80%;
+  background-color: white;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ;
+}
+.accordion-content img{
+  width: 90px;
+  height: 50px;
+}
+/* --------------------------------------------------------END-TEMPORADAS-------------------------------------------------- */
+/* ----------------------------------------------------------MERCHANDAISING------------------------------------------------ */
+.column_merchandaising{
+  padding-left: 15%;
+  padding-top: 20px;
+}
+
+
+.producto{
+  padding: 5px;
+}
+.img_producto{
+
+  height: 200px;
+  width: 200px;
+}
+/* -------------------------------------------------------END-MERCHANDAISING------------------------------------------------ */
+/* ------------------------------------------------------------REPARTO------------------------------------------------------ */
+.column_reparto{
+  padding-left: 10%;
+  padding-top: 10px;
+  text-align: center;
+}
+.img_reparto{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+/* -----------------------------------------------------------------END-REPARTO---------------------------------------------- */
+/* Footer */
+.containerF{
+  text-align: center;
+}
+.containerF p{
+  background-color: #000;
+  color: #fff;
+  padding: 10px 0px 10px 0PX;
+  font-family: arial;
+  font-weight: bold;
+}
